@@ -1,5 +1,7 @@
 # freeCodeCamp Antipolo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4eab73e5-68bc-4452-8718-a8844c380dc3/deploy-status)](https://app.netlify.com/sites/fccantipolo/deploys)
+
 > A local study group in Antipolo City, Philippines learning to code through freeCodeCamp.org
 
 ## Quickstart
