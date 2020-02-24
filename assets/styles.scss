@@ -1,0 +1,63 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+// Overrides
+$primary: #0a0a23;
+$primary-invert: findColorInvert($primary);
+$link: $primary;
+$link-invert: findColorInvert($link);
+$family-primary: "Roboto Mono", monospace;
+$body-font-size: 18px;
+$body-overflow-y: auto;
+
+@import '~bulma';
+
+.logo {
+  position: relative;
+  bottom: -3px; // Align logo correctly with logo-suffix vertically
+}
+
+.logo-suffix {
+  display: none; // Logo suffix hidden by default
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-suffix {
+    display: block; // Logo suffix will be shown on desktop
+    margin-left: 10px;
+  }
+}
+
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  &-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $primary; // fallback color
+    background: linear-gradient(115.36deg, rgba(10, 10, 35, 0.98) 0%, rgba(5, 5, 21, 0.89) 83.08%);
+  }
+}
+
+footer.footer {
+  & .seal {
+    display: block;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+
+  & p {
+    margin-bottom: 10px;
+  }
+}
